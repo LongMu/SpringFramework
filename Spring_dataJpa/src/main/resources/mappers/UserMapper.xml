@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lmu.mapper.UserMapper">
+  <resultMap id="BaseResultMap" type="com.lmu.entity.User">
+    <!--@mbg.generated generated on Mon Dec 28 09:06:29 CST 2020.-->
+    <!--@Table `user`-->
+    <id column="ID" jdbcType="INTEGER" property="id" />
+    <result column="USERNAME" jdbcType="VARCHAR" property="username" />
+    <result column="SEX" jdbcType="VARCHAR" property="sex" />
+    <result column="AGE" jdbcType="INTEGER" property="age" />
+    <result column="S_ID" jdbcType="INTEGER" property="sId" />
+    <result column="CREATETIME" jdbcType="TIMESTAMP" property="createtime" />
+    <result column="CREATEUSER" jdbcType="VARCHAR" property="createuser" />
+    <result column="PASSWORD" jdbcType="VARCHAR" property="password" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated generated on Mon Dec 28 09:06:29 CST 2020.-->
+    ID, USERNAME, SEX, AGE, S_ID, CREATETIME, `CREATEUSER`, `PASSWORD`
+  </sql>
+</mapper>
